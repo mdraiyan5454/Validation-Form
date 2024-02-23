@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: changeColors 5s infinite alternate;
+  }
+  
+  @keyframes changeColors {
+    0% {
+      background-color: #EEF5FF; 
+    }
+    50% {
+      background-color: #B4D4FF 
+    }
+    100% {
+      background-color: #86B6F6
+    }
+  }
+/* Animation styles */
+.container:hover {
+    background-color: #76adf5; /* Background color on hover */
+  }
+
+  .animate-left {
+    animation: slideLeft 2s infinite alternate;
+  }
+
+  .animate-right {
+    animation: slideRight 2s infinite alternate;
+  }
+
+  /* Keyframe animations */
+  @keyframes slideLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50px); }
+  }
+
+  @keyframes slideRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+  }
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+   
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+}
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+p {
+    color: darkblue;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}
+button {
+    width: 30%;
+    margin: 0px 22px 0px 160px;
+   justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #001F66;
+}
+
+
+/* 
+
+.container {
+    width: 500px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #b3cde0; 
+    color: #001f3f; 
+    border-radius: 10px;
+} */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 2px solid #001f3f; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+
+/*------------- responsive------- */
+
+@media(max-width:1024px){
+    form {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:500px){
+    .container {
+        width: 480px;
+    }
+}
+
+@media(max-width:450px){
+    .container {
+        width: 420px;
+    }
+}
+@media(max-width:425px){
+    .container {
+        width: 400px;
+    }
+    button {
+        margin: 0px 22px 0px 126px;
+    }
+}
+
+@media(max-width:400px){
+    .container {
+        width: 375px;
+    }
+}
+
+@media(max-width:375px){
+    .container {
+        width: 350px;
+    }
+    button {
+        margin: 0px 22px 0px 110px;
+    }
+}
+@media(max-width:350px){
+    .container {
+        width: 300px;
+    }
+    button {
+        margin: 0px 22px 0px 90px;
+    }
+    
+}
+@media(max-width:300px){
+    .container {
+        width: 250px;
+    }
+    button {
+        margin: 0px 22px 0px 80px;
+    }
+    
+}
+@media(max-width:250px){
+    .container {
+        width: 200px;
+    }
+    button {
+        margin: 0px 22px 0px 70px;
+    }
+    
+}
+@media(max-width:200px){
+    .container {
+        width: 150px;
+    }
+    button {
+        margin: 0px 22px 0px 60px;
+    }
+    
+}
